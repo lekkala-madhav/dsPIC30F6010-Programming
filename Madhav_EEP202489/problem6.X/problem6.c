@@ -38,18 +38,18 @@ int main()
  
     // Set OC channel 1 pulse start and stop times
     OC1R = 0;           
-    OC1RS = 25;
+    OC1RS = 5;
  
     // Set OC channel 2 pulse start and stop times
-    OC2R = 10;
-    OC2RS = 35;
+    OC2R = 2;
+    OC2RS = 7;
  
     // Set output compare mode for continuous pulses
     OC1CONbits.OCM = 0b101;
     OC2CONbits.OCM = 0b101;
  
     // Configure timer 2 (default timer for output compare)
-    PR2 = 50; // 0.1ms period
+    PR2 = 10; // 20us period
     T2CONbits.TON = 1; // Enable timer 2
     
     while(1)

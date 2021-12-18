@@ -46,5 +46,8 @@
 			    ; (see IOCON1 register)
 
     bset PTCON, #15	    ; turn ON PWM module
+    
 
 		
+
+

@@ -56,10 +56,10 @@ Program Memory  [Origin = 0x100, Length = 0x17f00]
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x100                0x62            0x93  (147)
-.text                        0x162                0x1e            0x2d  (45)
-.dinit                       0x180                 0x2             0x3  (3)
+.text                        0x162                0x16            0x21  (33)
+.dinit                       0x178                 0x2             0x3  (3)
 
-                     Total program memory used (bytes):           0xc3  (195) <1%
+                     Total program memory used (bytes):           0xb7  (183) <1%
 
 
 Data Memory  [Origin = 0x800, Length = 0x2000]
@@ -185,9 +185,8 @@ __FWDT            0xf80002          0x2
  *(__FWDT.sec*)
  __FWDT.sec       0xf80002          0x2 build/default/production/problem8.o
 
-__FBORPOR         0xf80004          0x2
+__FBORPOR
  *(__FBORPOR.sec*)
- __FBORPOR.sec    0xf80004          0x2 build/default/production/problem8.o
 
 __RESERVED1
  *(__RESERVED1.sec*)
@@ -219,9 +218,9 @@ userdata
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x14 build/default/production/problem8.o
 
-.debug_line       0x000000         0x47
+.debug_line       0x000000         0x43
  *(.debug_line)
- .debug_line      0x000000         0x47 build/default/production/problem8.o
+ .debug_line      0x000000         0x43 build/default/production/problem8.o
 
 .debug_frame
  *(.debug_frame)
@@ -1414,9 +1413,9 @@ __c30_signature
  __c30_signature
                   0x000018          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
 
-.text             0x000162         0x1e
- .text            0x000162         0x1e build/default/production/problem8.o
+.text             0x000162         0x16
+ .text            0x000162         0x16 build/default/production/problem8.o
                   0x000162                  __reset
 
-.dinit            0x000180          0x2
- .dinit           0x000180          0x2 data_init
+.dinit            0x000178          0x2
+ .dinit           0x000178          0x2 data_init
